@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var optimist = require('optimist');
+var pp = require('preprocess');
+
+var argv = optimist
+  .usage('Usage: $0 <file> [options]')
+  .alias('c', 'context')
+  .string('c')
+  .describe('c', 'Context file: must be js or json')
+  .alias('f', 'format')
+  .string('f')
+  .describe('f', 'Input format')
+  .default('f', 'html')
+  .argv;
+
+if(argv._.length === 0 || argv.help) {
+  console.log(optimist.help());
+  process.exit();
+}
+
+// Options
+var sourceFile = path.resolve(argv._[0]);
+var contextFile = path.resolve(argv.c);
+var format = argv.f;
+
+var source = fs.readFileSync(sourceFile);
+var context = require(contextFile);
+
+console.log(pp.preprocess(source, context, format));

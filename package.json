@@ -1,0 +1,29 @@
+{
+  "author": {
+    "name": "András Tarsoly",
+    "email": "tarsolya@gmail.com"
+  },
+  "name": "preprocess-cli",
+  "description": "CLI wrapper for preprocess",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tarsolya/preprocess-cli.git"
+  },
+  "keywords": [
+    "preprocess",
+    "cli",
+    "make",
+    "javascript",
+    "html"
+  ],
+  "main": "./bin/preprocess",
+  "dependencies": {
+    "optimist": "*",
+    "preprocess": "^2.3.1"
+  },
+  "bin": {
+    "preprocess": "./bin/preprocess"
+  }
+}
