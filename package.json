@@ -5,7 +5,7 @@
   },
   "name": "preprocess-cli",
   "description": "CLI wrapper for preprocess",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "main": "./bin/preprocess",
   "dependencies": {
     "optimist": "*",
-    "preprocess": "^2.3.1"
+    "preprocess": "^3.1.0"
   },
   "bin": {
     "preprocess": "./bin/preprocess"
