@@ -21,7 +21,7 @@ var argv = optimist
   .describe('src-dir', 'The directory where to look for files included. Defaults to process.cwd().')
 
   .string('src-eol')
-  .describe('src-eol', "The end of line (EOL) character to use for the preprocessed result. One of: \\r\\n, \\n, \\r")
+  .describe('src-eol', "The end of line (EOL) character to use for the preprocessed result.")
 
   .alias('t', 'type')
   .string('t')
