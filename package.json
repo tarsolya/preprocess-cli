@@ -21,7 +21,7 @@
   "main": "./bin/preprocess",
   "dependencies": {
     "optimist": "*",
-    "preprocess": "^2.3.1"
+    "preprocess": "^3.1.0"
   },
   "bin": {
     "preprocess": "./bin/preprocess"
